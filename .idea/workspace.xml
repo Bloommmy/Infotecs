@@ -20,14 +20,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ad6aac8b-eb50-4a77-a247-ab0857f1d0de" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/scr/dataBase/dataBase.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scr/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scr/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scr/modules/editTable.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scr/modules/getData.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scr/modules/resDis.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scr/modules/sort.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scr/static/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scr/modules/editTable.js" beforeDir="false" afterPath="$PROJECT_DIR$/scr/modules/editTable.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,7 +65,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1600512025979</updated>
-      <workItem from="1600512027796" duration="9085000" />
+      <workItem from="1600512027796" duration="9435000" />
     </task>
     <servers />
   </component>

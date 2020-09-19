@@ -8,7 +8,6 @@ export function editTabel(data) {
         let target = event.target;
         if ((target.tagName != 'TD') && (target.tagName != 'DIV')) return;
         const row = event.target.closest('.data-row');
-        console.log(row);
         ChangeRow = row;
         const editTableForm = `
             <form action="" class='form'>
@@ -57,8 +56,6 @@ export function editTabel(data) {
                 about: textarea.value,
                 eyeColor: inputs[2].value,
             };
-
-            console.log(ChangeRow.id);
 
             let editedRowIndex = 0;
             data.JSON.forEach((item, i, arr) => {
