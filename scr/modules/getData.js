@@ -1,3 +1,4 @@
+// Получение данных из json
 export function readFile(file, callback) {
     const rawFile = new XMLHttpRequest();
     rawFile.overrideMimeType("application/json");

@@ -1,13 +1,14 @@
-import {resultDisplay} from "./modules/resDis.js";
-import {sorting} from "./modules/sort.js";
+// иморт нужных функций
 import {readFile} from "./modules/getData.js";
 import {editTabel} from "./modules/editTable.js";
+import {displayPages} from "./modules/makeArray.js";
 
+// получаем данные из json и делаем все нужные махинации
 readFile("./dataBase/dataBase.json", function(text) {
     const data = JSON.parse(text);
-    resultDisplay(data.JSON, data);
-    sorting(data);
     editTabel(data);
+    // сортировка происходит по странице и вызываеться в модуле makeArray
+    displayPages(data);
 });
 
 

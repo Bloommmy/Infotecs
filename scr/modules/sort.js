@@ -37,21 +37,21 @@ function reversed(items, criterion) {
     return(items);
 };
 // Вывод результата на экран
-function sortCrit(data, button, criterion) {
-    let items = data.JSON;
+function sortCrit(page, button, criterion) {
+    let items = page;
     let flag = 0;
     button.addEventListener('click', () => {
         if (flag == 0) {
-            resultDisplay(sortName(items, criterion), data);
+            resultDisplay(sortName(items, criterion));
             flag = 1;
         } else {
-            resultDisplay(reversed(items, criterion), data);
+            resultDisplay(reversed(items, criterion));
             flag = 0;
         }
     })
 };
 
-
+// Обработчик кнопок сортировки для каждого столбца
 export function sorting(data) {
 
     const sortFirstName = document.querySelector('.first_name');

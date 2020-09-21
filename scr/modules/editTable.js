@@ -4,6 +4,8 @@ export function editTabel(data) {
     const table = document.querySelector('.table');
     const editTable = document.querySelector('.editTable');
     let ChangeRow;
+
+    // Создание шаблона формы редактирования данных о пользователи
     table.addEventListener('click', function(event) {
         let target = event.target;
         if ((target.tagName != 'TD') && (target.tagName != 'DIV')) return;
@@ -18,7 +20,7 @@ export function editTabel(data) {
                 </p>
                 <p>Цвет глаз: <input type="text"></p>
             </form>
-            <button class='btn-edit'>Редактировать</button>
+            <button class='btn-edit'>Сохранить</button>
             <button class='btn-close'>Отмена</button>
         `;
         editTable.innerHTML = editTableForm;
@@ -36,11 +38,13 @@ export function editTabel(data) {
             }
         });
 
+        // Заполняем форму данными из json что бы их можно было редактировать
         inputs[0].value = row.cells[0].innerHTML;
         inputs[1].value = row.cells[1].innerHTML;
         textarea.value = about;
         inputs[2].value = row.cells[3].innerHTML;
 
+        // Обработчики кнопок
         btnClose.addEventListener('click', () => {
             editTable.innerHTML = '';
         });
